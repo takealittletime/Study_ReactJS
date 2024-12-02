@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Editor from './components/Editor'
 import List from './components/List'
 import Exam from './components/Exam'
-import { useState, useRef } from 'react'
+import { useState, useRef, useCallback } from 'react'
 
 const mockData = [
   {
@@ -59,6 +59,13 @@ function App() {
       todos.filter((todo)=>todo.id != targetId)
     );
   }
+
+  // const onDelete = useCallback((targetId) => {
+  //   dispatch({
+  //     type: "DELETE",
+  //     targetId: targetId,
+  //   });
+  // },[]);
 
   return (
     <div className='App'>
