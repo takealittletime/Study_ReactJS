@@ -3,9 +3,9 @@ const Controller = ({onClickButton}) => {
     <div>
       <button onClick={ ()=>
         {
-          onClickButton(-100);
+          onClickButton(-1);
         }
-      }>-100</button>
+      }>-1</button>
       <button onClick={ ()=>
         {
           onClickButton(-10);
@@ -13,24 +13,24 @@ const Controller = ({onClickButton}) => {
       }>-10</button>
       <button onClick={ ()=>
         {
-          onClickButton(-1);
+          onClickButton(-100);
         }
-      }>-1</button>
-      <button onClick={ ()=>
-        {
-          onClickButton(1);
-        }
-      }>1</button>
-      <button onClick={ ()=>
-        {
-          onClickButton(10);
-        }
-      }>10</button>
+      }>-100</button>
       <button onClick={ ()=>
         {
           onClickButton(100);
         }
-      }>100</button>
+      }>+100</button>
+      <button onClick={ ()=>
+        {
+          onClickButton(10);
+        }
+      }>+10</button>
+      <button onClick={ ()=>
+        {
+          onClickButton(1);
+        }
+      }>+1</button>
     </div>
   )
 }
