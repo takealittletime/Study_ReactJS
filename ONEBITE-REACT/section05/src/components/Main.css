@@ -1,0 +1,19 @@
+.logout {
+  display: inline-block;
+  background-color: goldenrod;
+  margin: 2px;
+  padding: 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: white;
+}
+
+.login {
+  display: inline-block;
+  background-color: green;
+  margin: 2px;
+  padding: 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: white;
+}
