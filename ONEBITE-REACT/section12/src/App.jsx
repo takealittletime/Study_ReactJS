@@ -1,5 +1,5 @@
 import './App.css'
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, Link} from "react-router-dom";
 import Home from "./pages/Home"
 import Diary from './pages/Diary';
 import New from './pages/New';
@@ -12,14 +12,20 @@ import NotFound from './pages/Notfound';
 
 function App() {
   return (
-    <Routes>
-      {/* Routes 컴포넌트 안에는 Route만 넣을 수 있다. */}
-      {/* 아래 Route문들 위에 만약 <div>를 추가했다고 한다면, 해당 요소는 모든 페이지에 다 표시된다. */}
-      <Route path='/' element={<Home/>}/>
-      <Route path='/new' element={<New/>}/>
-      <Route path='/diary' element={<Diary/>}/>
-      <Route path='*' element={<NotFound/>}/>
-    </Routes>
+    <>
+      <div>
+        <Link to = {"/"}>Home</Link>
+        <Link to = {"/new"}>New</Link>
+        <Link to = {"/diary"}>Diary</Link>
+      </div>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/new' element={<New/>}/>
+        <Route path='/diary' element={<Diary/>}/>
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
+    </>
+    
   )
 }
 
