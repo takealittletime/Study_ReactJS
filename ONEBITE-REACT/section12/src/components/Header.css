@@ -11,20 +11,20 @@
 }
 
 .Header .header_center {
-  /* width: 50%; */
-  flex-grow: 2;
+  width: 50%;
+  /* flex-grow: 2; */
   font-size: 25px;
   justify-content: center;
 }
 
 .Header .header_left {
-  /* width: 25%; */
-  flex-grow: 1;
+  width: 25%;
+  /* flex-grow: 1; */
   justify-content: flex-start;
 }
 
 .Header .header_right {
-  /* width: 25%; */
-  flex-grow: 1;
+  width: 25%;
+  /* flex-grow: 1; */
   justify-content: flex-end;
 }
