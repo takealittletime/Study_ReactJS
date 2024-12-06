@@ -5,7 +5,7 @@ const Edit = () => {
 
   return (
     <div>
-      <h1>{params.id}번 일기입니다.</h1>
+      <h1>수정 페이지:: {params.id}번 일기입니다.</h1>
     </div>
   )
 }
