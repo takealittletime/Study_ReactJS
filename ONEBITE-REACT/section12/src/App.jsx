@@ -54,6 +54,9 @@ function App() {
   const [data, dispatch] = useReducer(reducer, mockData);
   const idRef = useRef(3);
 
+  // Local Storage에 값 저장 ('key':'value')
+  localStorage.setItem('test', 'hello');
+
   //새로운 일기 추가
   const onCreate = (createdDate, emotionId, content)=>{
     dispatch({
