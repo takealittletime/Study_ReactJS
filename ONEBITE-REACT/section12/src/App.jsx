@@ -55,7 +55,14 @@ function App() {
   const idRef = useRef(3);
 
   // Local Storage에 값 저장 ('key':'value')
-  localStorage.setItem('test', 'hello');
+  // localStorage.setItem('test', 'hello');
+  // localStorage.setItem('person',JSON.stringify({name:'최민규'}));
+
+  // LocalStorage에서 값 꺼내기
+  console.log(localStorage.getItem('test'));
+  console.log(JSON.parse(localStorage.getItem('person')));
+  // * JSON.parse()는 인수가 null이거나 undefined이면 오류 발생
+  // console.log(JSON.parse(undefined));
 
   //새로운 일기 추가
   const onCreate = (createdDate, emotionId, content)=>{
