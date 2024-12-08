@@ -59,10 +59,13 @@ function App() {
   // localStorage.setItem('person',JSON.stringify({name:'최민규'}));
 
   // LocalStorage에서 값 꺼내기
-  console.log(localStorage.getItem('test'));
-  console.log(JSON.parse(localStorage.getItem('person')));
+  // console.log(localStorage.getItem('test'));
+  // console.log(JSON.parse(localStorage.getItem('person')));
   // * JSON.parse()는 인수가 null이거나 undefined이면 오류 발생
   // console.log(JSON.parse(undefined));
+
+  // LocalStorage에서 값 삭제하기
+  localStorage.removeItem('test');
 
   //새로운 일기 추가
   const onCreate = (createdDate, emotionId, content)=>{
